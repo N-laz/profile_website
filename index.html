@@ -3,12 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Noman Kazi — Software Builder</title>
-<meta name="description" content="Noman Kazi is a software builder based in Surat, India, designing and engineering websites, web apps and software built to last.">
+<meta name="theme-color" content="#e9e9e4">
+<title>Noman Kazi — Independent Developer</title>
+<meta name="description" content="Noman Kazi is an independent developer based in Surat, India, building thoughtful websites and web apps.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Noman Kazi — Independent Developer">
+<meta property="og:description" content="Thoughtful websites and web apps, designed and built by Noman Kazi in Surat, India.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Cpath d='M9 23V9l14 14V9' stroke='%23fff' stroke-width='2.4' fill='none' stroke-linecap='square'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://api.fontshare.com">
 <link href="https://api.fontshare.com/v2/css?f[]=general-sans@300,400,500&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="assets/royal-heritage.webp">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,146 +19,319 @@
 
 <header class="site-header">
   <a href="#top" class="brand" aria-label="Noman Kazi — home">
-    <svg class="brand-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-      <rect x="1.5" y="1.5" width="29" height="29" rx="7" stroke="currentColor" stroke-width="1.6"/>
-      <path d="M10 22V10l12 12V10" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/>
-    </svg>
-    <span>Noman Kazi</span>
+    <span class="brand-mark" aria-hidden="true">NK</span>
+    <span class="brand-name">Noman Kazi<span>Independent developer</span></span>
   </a>
-  <nav class="nav" aria-label="Primary">
-    <a href="#work">Work</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
+  <button class="menu-toggle" type="button" aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" hidden>
+    <span></span><span></span>
+  </button>
+  <nav class="nav" id="primary-navigation" aria-label="Primary navigation">
+    <p class="nav-label">Explore</p>
+    <a href="#work"><span>01</span> Selected work</a>
+    <a href="#about"><span>02</span> About</a>
+    <a href="#services"><span>03</span> Services</a>
+    <a href="#contact"><span>04</span> Contact</a>
+    <p class="nav-note">Noman Kazi · Surat, India</p>
   </nav>
 </header>
 
-<main id="main">
-  <!-- HERO SLIDESHOW -->
-  <section class="hero" id="top" aria-label="Featured work">
-    <div class="slide is-active">
-      <img src="assets/royal-heritage.webp" alt="The Royal Heritage hotel website">
-      <div class="slide-caption"><span>Featured</span> The Royal Heritage</div>
+<main id="main" tabindex="-1">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-art" aria-hidden="true">
+      <div class="hero-ring"></div>
+      <div class="hero-core"></div>
+      <div class="hero-orbit">
+        <div class="hero-moon"></div>
+      </div>
     </div>
-    <div class="slide">
-      <img src="assets/tea-junction.webp" alt="Tea Junction café website">
-      <div class="slide-caption"><span>Featured</span> Tea Junction</div>
+    <p class="hero-kicker">Independent developer <span>·</span> Surat, India</p>
+    <h1 class="hero-title" id="hero-title">Noman Kazi</h1>
+    <div class="hero-bottom">
+      <p class="hero-description">
+        <span>Websites, interfaces and useful software.</span>
+        <span>Clear ideas, considered design</span>
+        <span>and thoughtful development.</span>
+      </p>
     </div>
-    <div class="slide">
-      <img src="assets/nova-ecommerce.webp" alt="Nova e-commerce store">
-      <div class="slide-caption"><span>Featured</span> Nova</div>
-    </div>
-    <div class="slide">
-      <img src="assets/what-to-watch.webp" alt="What To Watch movie recommendation site">
-      <div class="slide-caption"><span>Featured</span> What To Watch</div>
-    </div>
-    <div class="hero-progress" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <a class="hero-link" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
   </section>
 
-  <!-- STATEMENT -->
   <section class="statement">
-    <h1 class="reveal">I design and build software that feels simple, runs fast and keeps working long after launch day.</h1>
-  </section>
-
-  <!-- RECENT WORK -->
-  <section class="work" id="work">
-    <div class="section-head">
-      <h2>Selected Work</h2>
-      <a class="u-link" href="https://github.com/N-laz" target="_blank" rel="noopener">View all on GitHub</a>
-    </div>
-
-    <!-- 1. ROYAL HERITAGE -->
-    <article class="row row--a reveal">
-      <a class="row-media" href="https://the-royal-heritage.vercel.app/" target="_blank" rel="noopener" aria-label="Open The Royal Heritage">
-        <img src="assets/royal-heritage.webp" alt="The Royal Heritage hotel website">
-      </a>
-      <div class="row-text">
-        <h3>The Royal Heritage<span>Hotel · Website</span></h3>
-        <p class="lede">A luxury resort experience — immersive hero, refined booking flow and editorial typography.</p>
-        <a class="u-link" href="https://the-royal-heritage.vercel.app/" target="_blank" rel="noopener">Visit live site →</a>
-      </div>
-    </article>
-
-    <!-- 2. TEA JUNCTION -->
-    <article class="row row--b reveal">
-      <div class="row-text">
-        <h3>Tea Junction<span>Café · Restaurant Website</span></h3>
-        <p class="lede">A neighbourhood chai café in Surat — hand-drawn identity, menu, spaces and online ordering.</p>
-        <a class="u-link" href="https://tea-junction-9j3h.vercel.app/" target="_blank" rel="noopener">Visit live site →</a>
-      </div>
-      <a class="row-media tall" href="https://tea-junction-9j3h.vercel.app/" target="_blank" rel="noopener" aria-label="Open Tea Junction">
-        <img src="assets/tea-junction.webp" alt="Tea Junction café website">
-      </a>
-    </article>
-
-    <!-- 3. NOVA -->
-    <article class="row row--a reveal">
-      <a class="row-media" href="https://nova-ecommerce-peach.vercel.app/" target="_blank" rel="noopener" aria-label="Open Nova">
-        <img src="assets/nova-ecommerce.webp" alt="Nova e-commerce store">
-      </a>
-      <div class="row-text">
-        <h3>Nova<span>E-commerce · Web App</span></h3>
-        <p class="lede">A premium electronics storefront with search, compare, wishlist and secure checkout.</p>
-        <a class="u-link" href="https://nova-ecommerce-peach.vercel.app/" target="_blank" rel="noopener">Visit live site →</a>
-      </div>
-    </article>
-
-    <!-- 4. WHAT TO WATCH -->
-    <article class="row row--b reveal">
-      <div class="row-text">
-        <h3>What To Watch<span>Entertainment · Discovery</span></h3>
-        <p class="lede">A discovery engine for movies and series — Top 10 charts, trending rails and instant search.</p>
-        <a class="u-link" href="https://what-to-watch-bice-rho.vercel.app/" target="_blank" rel="noopener">Visit live site →</a>
-      </div>
-      <a class="row-media tall" href="https://what-to-watch-bice-rho.vercel.app/" target="_blank" rel="noopener" aria-label="Open What To Watch">
-        <img src="assets/what-to-watch.webp" alt="What To Watch movie recommendation site">
-      </a>
-    </article>
-  </section>
-
-  <!-- STACK MARQUEE -->
-  <section class="stack" aria-label="Tools I work with">
-    <p class="stack-intro reveal">Over the years I've shipped products across hospitality, commerce and entertainment — working with a stack chosen for speed and longevity.</p>
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Python</span><span>PostgreSQL</span><span>Flutter</span><span>Tailwind</span><span>AWS</span><span>Docker</span><span>Figma</span>
-        <span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Python</span><span>PostgreSQL</span><span>Flutter</span><span>Tailwind</span><span>AWS</span><span>Docker</span><span>Figma</span>
-      </div>
+    <p class="eyebrow reveal">About my approach</p>
+    <div class="approach-composition" role="group" aria-label="My approach: architecture, development, deployment, APIs, frontends, scalability and databases.">
+      <p class="approach-row approach-row--architecture">
+        <span class="approach-word reveal" style="--approach-index: 0">Architecture</span>
+      </p>
+      <p class="approach-row approach-row--pair">
+        <span class="approach-word reveal" style="--approach-index: 1">Development</span>
+        <span class="approach-connector reveal" style="--approach-index: 2" aria-hidden="true"></span>
+        <span class="approach-word reveal" style="--approach-index: 3">Deployment</span>
+      </p>
+      <p class="approach-row approach-row--triple">
+        <span class="approach-word reveal" style="--approach-index: 4">APIs</span>
+        <span class="approach-connector reveal" style="--approach-index: 5" aria-hidden="true"></span>
+        <span class="approach-word reveal" style="--approach-index: 6">Frontends</span>
+        <span class="approach-connector reveal" style="--approach-index: 7" aria-hidden="true"></span>
+        <span class="approach-word reveal" style="--approach-index: 8">Scalability</span>
+      </p>
+      <p class="approach-row approach-row--databases">
+        <span class="approach-word reveal" style="--approach-index: 9">Databases</span>
+      </p>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <div class="section-head"><h2>Services</h2></div>
-    <ol class="svc">
-      <li class="reveal"><span class="n">01</span><h3>Websites</h3><p>Fast, responsive, and beautiful websites — from landing pages and portfolios to full e-commerce stores.</p></li>
-      <li class="reveal"><span class="n">02</span><h3>Software</h3><p>Custom web apps, dashboards and tools built with clean, maintainable code from prototype to production.</p></li>
-    </ol>
+  <section class="work" id="work" tabindex="-1" aria-labelledby="work-title">
+    <div class="section-head reveal">
+      <div>
+        <p class="eyebrow">01 / Selected projects</p>
+        <h2 id="work-title">Selected work<span>2023 — 2026</span></h2>
+      </div>
+      <a class="text-link" href="https://github.com/N-laz" target="_blank" rel="noopener">More on GitHub <span aria-hidden="true">↗</span></a>
+    </div>
+
+    <article class="row reveal">
+      <a class="row-link" href="https://the-royal-heritage.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View The Royal Heritage project">
+        <div class="row-heading">
+          <h3>The Royal Heritage</h3>
+          <span class="row-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="row-details">
+          <p class="project-index">Hospitality · Hotel website</p>
+          <p class="lede">A luxury resort experience, shaped around immersive imagery, a refined booking flow and editorial typography.</p>
+        </div>
+        <div class="row-media">
+          <picture>
+            <source media="(max-width: 760px)" srcset="assets/royal-heritage-480.webp 480w, assets/royal-heritage-960.webp 960w, assets/royal-heritage.webp 1394w" sizes="calc(100vw - 8px)">
+            <img src="assets/royal-heritage.webp" width="1394" height="723" alt="The Royal Heritage hotel website" loading="lazy" decoding="async">
+          </picture>
+        </div>
+      </a>
+    </article>
+
+    <article class="row reveal">
+      <a class="row-link" href="https://tea-junction-9j3h.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View Tea Junction project">
+        <div class="row-heading">
+          <h3>Tea Junction</h3>
+          <span class="row-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="row-details">
+          <p class="project-index">Food & drink · Café website</p>
+          <p class="lede">A neighbourhood chai café in Surat, with a hand-drawn identity, menus, spaces and online ordering.</p>
+        </div>
+        <div class="row-media">
+          <picture>
+            <source media="(max-width: 760px)" srcset="assets/tea-junction-480.webp 480w, assets/tea-junction-960.webp 960w, assets/tea-junction.webp 1394w" sizes="calc(100vw - 8px)">
+            <img src="assets/tea-junction.webp" width="1394" height="723" alt="Tea Junction café website" loading="lazy" decoding="async">
+          </picture>
+        </div>
+      </a>
+    </article>
+
+    <article class="row reveal">
+      <a class="row-link" href="https://nova-ecommerce-peach.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View NOVA eCommerce project">
+        <div class="row-heading">
+          <h3>NOVA eCommerce</h3>
+          <span class="row-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="row-details">
+          <p class="project-index">Commerce · Web app</p>
+          <p class="lede">A premium electronics storefront with search, compare, wishlist and secure checkout.</p>
+        </div>
+        <div class="row-media">
+          <picture>
+            <source media="(max-width: 760px)" srcset="assets/nova-ecommerce-480.webp 480w, assets/nova-ecommerce-960.webp 960w, assets/nova-ecommerce.webp 1394w" sizes="calc(100vw - 8px)">
+            <img src="assets/nova-ecommerce.webp" width="1394" height="739" alt="NOVA e-commerce website" loading="lazy" decoding="async">
+          </picture>
+        </div>
+      </a>
+    </article>
+
+    <article class="row reveal">
+      <a class="row-link" href="https://what-to-watch-bice-rho.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="View What to Watch project">
+        <div class="row-heading">
+          <h3>What to Watch</h3>
+          <span class="row-arrow" aria-hidden="true">↗</span>
+        </div>
+        <div class="row-details">
+          <p class="project-index">Entertainment · Discovery</p>
+          <p class="lede">A discovery engine for movies and series — Top 10 charts, trending rails and instant search.</p>
+        </div>
+        <div class="row-media">
+          <picture>
+            <source media="(max-width: 760px)" srcset="assets/what-to-watch-480.webp 480w, assets/what-to-watch-960.webp 960w, assets/what-to-watch.webp 1394w" sizes="calc(100vw - 8px)">
+            <img src="assets/what-to-watch.webp" width="1394" height="739" alt="What to Watch movie discovery website" loading="lazy" decoding="async">
+          </picture>
+        </div>
+      </a>
+    </article>
+  </section>
+
+  <section class="stack" aria-labelledby="stack-title">
+    <div class="stack-heading reveal">
+      <p class="eyebrow">02 / Tools</p>
+      <h2 id="stack-title">A practical<br>toolkit.</h2>
+    </div>
+    <p class="stack-intro reveal">The technologies I use to design, build and ship websites, web apps and software.</p>
+    <div class="marquee">
+      <ul class="marquee-track" aria-label="Technologies I work with">
+        <li class="tool-chip reveal" style="--tool-index: 0">TypeScript</li>
+        <li class="tool-chip reveal" style="--tool-index: 1">React</li>
+        <li class="tool-chip reveal" style="--tool-index: 2">Next.js</li>
+        <li class="tool-chip reveal" style="--tool-index: 3">Node.js</li>
+        <li class="tool-chip reveal" style="--tool-index: 4">Python</li>
+        <li class="tool-chip reveal" style="--tool-index: 5">PostgreSQL</li>
+        <li class="tool-chip reveal" style="--tool-index: 6">Flutter</li>
+        <li class="tool-chip reveal" style="--tool-index: 7">Tailwind</li>
+        <li class="tool-chip reveal" style="--tool-index: 8">AWS</li>
+        <li class="tool-chip reveal" style="--tool-index: 9">Docker</li>
+        <li class="tool-chip reveal" style="--tool-index: 10">Figma</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="about" id="about" tabindex="-1" aria-labelledby="about-title">
+    <header class="about-heading reveal">
+      <p class="eyebrow">Innovating with code, growing through technology</p>
+      <h2 id="about-title">About</h2>
+    </header>
+    <div class="about-content">
+      <p class="about-lead reveal">I’m Noman.<br>I build thoughtful<br><em>web experiences.</em></p>
+      <div class="about-copy reveal">
+        <p>I’m an independent web developer based in Surat, India. I create clear, responsive websites and web apps, bringing considered design together with practical implementation.</p>
+        <p>My projects include work in hospitality, food, commerce and entertainment.</p>
+        <a class="about-link" href="https://github.com/N-laz" target="_blank" rel="noopener noreferrer">Explore my work on GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services" tabindex="-1" aria-labelledby="services-title">
+    <header class="services-heading reveal">
+      <p class="eyebrow">Behind the build, beyond the screen</p>
+      <h2 id="services-title">Services</h2>
+      <p class="services-intro">Based on the work I build and the tools I use, here are ways I can help.</p>
+    </header>
+    <div class="service-list">
+      <article class="service-panel reveal" style="--service-index: 0">
+        <h3>Web Development</h3>
+        <p class="service-description">Custom websites and web applications.</p>
+        <ol class="service-items">
+          <li>Business and portfolio websites</li>
+          <li>Responsive layouts for different screens</li>
+          <li>Landing pages</li>
+          <li>Website interface improvements</li>
+        </ol>
+      </article>
+      <article class="service-panel reveal" style="--service-index: 1">
+        <h3>Backend &amp; APIs</h3>
+        <p class="service-description">Practical backend features and connections for web projects.</p>
+        <ol class="service-items">
+          <li>Basic backend functionality</li>
+          <li>API integrations</li>
+          <li>Database-connected features</li>
+          <li>Authentication and data workflows</li>
+        </ol>
+      </article>
+      <article class="service-panel reveal" style="--service-index: 2">
+        <h3>Data &amp; Automation</h3>
+        <p class="service-description">Small tools and workflows to reduce repetitive work.</p>
+        <ol class="service-items">
+          <li>Repetitive task automation</li>
+          <li>API-based workflows</li>
+          <li>Data processing scripts</li>
+          <li>Practical integrations between tools</li>
+        </ol>
+      </article>
+      <article class="service-panel reveal" style="--service-index: 3">
+        <h3>Technical Consulting</h3>
+        <p class="service-description">Help with your tech decisions and implementation.</p>
+        <ol class="service-items">
+          <li>Guidance on choosing a suitable tech stack</li>
+          <li>Basic application structure planning</li>
+          <li>Code feedback and improvement suggestions</li>
+          <li>Identifying common performance issues</li>
+        </ol>
+      </article>
+    </div>
   </section>
 </main>
 
-<footer class="site-footer" id="contact">
-  <div class="footer-top">
-    <p class="cta"><a class="u-link" href="mailto:kazinomanimtiyaz7656@gmail.com">Get in touch</a> to discuss your project with me.</p>
-    <div class="footer-links">
-      <ul>
-        <li><a class="u-link" href="#work">Work</a></li>
-        <li><a class="u-link" href="#services">Services</a></li>
-        <li><a class="u-link" href="#contact">Contact</a></li>
-      </ul>
-      <ul>
-        <li><a class="u-link" href="https://github.com/N-laz" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a class="u-link" href="mailto:kazinomanimtiyaz7656@gmail.com">Email Me</a></li>
-        <li><a class="u-link" href="tel:+919081220186">+91 90812 20186</a></li>
-      </ul>
+<section class="contact" id="contact" tabindex="-1" aria-labelledby="contact-title">
+  <header class="contact-heading reveal">
+    <p class="contact-kicker">YOU DREAM IT, I BUILD IT.</p>
+    <h2 class="contact-title" id="contact-title">CONTACT</h2>
+    <div class="contact-rule" aria-hidden="true"></div>
+  </header>
+  <div class="contact-intro reveal">
+    <p>HAVE A QUESTION, IDEA OR PROJECT?</p>
+    <p>I’D LOVE TO HEAR FROM YOU.</p>
+  </div>
+  <div class="contact-rows">
+    <a class="contact-row reveal" href="mailto:kazinomanimtiyaz7656@gmail.com" aria-label="Email Noman Kazi at kazinomanimtiyaz7656@gmail.com">
+      <span class="contact-row-label">EMAIL</span>
+      <span class="contact-row-value">kazinomanimtiyaz7656@gmail.com</span>
+      <span class="contact-row-arrow" aria-hidden="true">↗</span>
+    </a>
+    <a class="contact-row reveal" href="tel:+919081220186" aria-label="Call Noman Kazi at +91 90812 20186">
+      <span class="contact-row-label">PHONE</span>
+      <span class="contact-row-value">+91 90812 20186</span>
+      <span class="contact-row-arrow" aria-hidden="true">↗</span>
+    </a>
+    <a class="contact-row reveal" href="https://github.com/N-laz" target="_blank" rel="noopener noreferrer" aria-label="Visit Noman Kazi on GitHub">
+      <span class="contact-row-label">SOCIAL MEDIA</span>
+      <span class="contact-row-value">GitHub <span class="contact-profile-url">github.com/N-laz</span></span>
+      <span class="contact-row-arrow" aria-hidden="true">↗</span>
+    </a>
+  </div>
+  <div class="contact-marquee" role="img" aria-label="Open for work. Let's chat. Get in touch.">
+    <div class="contact-marquee-track" aria-hidden="true">
+      <div class="contact-marquee-group">
+        <span>OPEN FOR WORK</span><span class="marquee-star">✳</span>
+        <span>LET’S CHAT</span><span class="marquee-star">✳</span>
+        <span>GET IN TOUCH</span><span class="marquee-star">✳</span>
+      </div>
+      <div class="contact-marquee-group">
+        <span>OPEN FOR WORK</span><span class="marquee-star">✳</span>
+        <span>LET’S CHAT</span><span class="marquee-star">✳</span>
+        <span>GET IN TOUCH</span><span class="marquee-star">✳</span>
+      </div>
     </div>
   </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-identity">
+      <a class="footer-brand" href="#top" aria-label="Noman Kazi — back to top">NK<span>Independent developer</span></a>
+      <p>Thoughtful websites and web apps, designed and built in Surat, India.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <div>
+        <p class="footer-label">Explore</p>
+        <ul>
+          <li><a href="#work">Selected work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-label">Elsewhere</p>
+        <ul>
+          <li><a href="https://github.com/N-laz" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></li>
+          <li><a href="mailto:kazinomanimtiyaz7656@gmail.com">Email <span aria-hidden="true">↗</span></a></li>
+          <li><a href="tel:+919081220186">Phone</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
   <div class="footer-bottom">
-    <p>Software design and engineering, from Surat.</p>
+    <p>Independent developer · Surat, India</p>
     <small>© <span id="yr">2026</span> Noman Kazi. All rights reserved.</small>
+    <a href="#top">Back to top ↑</a>
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="main.js" defer></script>
 <script data-pplx-inline-edit>
 (function () {
   if (window === window.top) return;
